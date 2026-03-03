@@ -1,0 +1,139 @@
+:root {
+    --parchment: #fdfbf7;
+    --ink: #1a1a1a;
+    --accent: #4a5d4e;
+    /* Sage green for a scholarly feel */
+}
+
+body {
+    background-color: var(--parchment);
+    color: var(--ink);
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Crimson Pro', serif;
+}
+
+.paper-texture {
+    background-image: url('https://www.transparenttextures.com/patterns/paper.png');
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hand-drawn-underline {
+    position: relative;
+    display: inline-block;
+}
+
+.hand-drawn-underline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 3px;
+    background-color: var(--accent);
+    transition: width 0.6s ease-in-out;
+    border-radius: 20% 80% 20% 80%;
+}
+
+.hand-drawn-underline:hover::after {
+    width: 100%;
+}
+
+/* Custom Scholarly Cursor */
+.custom-cursor {
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%234a5d4e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l5 5"></path><path d="M9.5 14.5L16 8"></path></svg>'), auto;
+}
+
+/* Section Decorative Border */
+.section-ornament {
+    position: relative;
+}
+
+.section-ornament::before {
+    content: "";
+    position: absolute;
+    top: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 1px;
+    background: var(--accent);
+    opacity: 0.3;
+}
+
+.subject-card {
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subject-card:hover {
+    transform: translateY(-10px);
+    background-color: #f8f5f0;
+}
+
+.subject-image-container {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    background-color: #f1ede6;
+}
+
+.subject-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    mix-blend-mode: multiply;
+    opacity: 0.8;
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subject-card:hover .subject-image {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+/* Theme: Blue Accents */
+.theme-blue-accents {
+    --accent: #5b8fb9;
+    /* Soft dusty blue */
+}
+
+.theme-blue-accents .section-ornament::before {
+    background: var(--accent);
+}
+
+/* Theme: Dark Blue Accents */
+.theme-dark-blue {
+    --accent: #1e3a8a;
+    /* Deep navy blue */
+}
+
+.theme-dark-blue .section-ornament::before {
+    background: var(--accent);
+}
+
+/* Theme: Yellow Accents */
+.theme-yellow {
+    --accent: #d97706;
+    /* Warm amber/yellow */
+}
+
+.theme-yellow .section-ornament::before {
+    background: var(--accent);
+}

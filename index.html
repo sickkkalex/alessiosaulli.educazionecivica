@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alessio Saulli - Educazione Civica</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Inter:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="paper-texture selection:bg-stone-200 custom-cursor">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-[#fdfbf7]/80 backdrop-blur-sm border-b border-stone-200">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-serif italic tracking-tight">ALESSIO SAULLI<span class="mx-2"> - </span> Ed.
+                Civica</a>
+            <div class="hidden md:flex space-x-8 text-sm uppercase tracking-widest font-medium text-stone-600">
+                <a href="#materie" class="hover:text-stone-900 transition-colors">Materie</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="min-h-screen flex flex-col items-center justify-center text-center px-6 relative overflow-hidden">
+        <div class="absolute inset-0 -z-10 opacity-5">
+            <div class="absolute top-10 left-10 w-64 h-64 border border-stone-900 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-10 right-10 w-96 h-96 border border-stone-900 rounded-full blur-3xl"></div>
+        </div>
+
+        <div class="reveal active">
+            <p class="text-stone-500 uppercase tracking-[0.3em] text-xs mb-4">Archivio Digitale</p>
+            <h1 class="text-5xl md:text-7xl font-light mb-6 tracking-tight leading-tight">
+                Alessio Saulli <br>
+                <span class="italic text-stone-400">→</span>
+                <span class="hand-drawn-underline">Educazione Civica</span>
+            </h1>
+            <p class="max-w-2xl mx-auto text-stone-600 text-lg md:text-xl font-light leading-relaxed">
+                Archivio di educazione civica di Alessio Saulli 5BIA per ogni materia.
+            </p>
+            <div class="mt-12">
+                <a href="#materie"
+                    class="group inline-flex items-center space-x-2 text-stone-500 hover:text-stone-900 transition-all">
+                    <span class="text-xs uppercase tracking-widest">Esplora le materie</span>
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="h-4 w-4 transform group-hover:translate-y-1 transition-transform" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M19 14l-7 7-7-7" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Subject Grid -->
+    <main id="materie" class="max-w-6xl mx-auto px-6 py-24">
+        <div class="text-center mb-24 reveal">
+            <h2 class="text-4xl font-light mb-4 italic">LE MATERIE</h2>
+            <div class="w-12 h-[1px] bg-stone-300 mx-auto"></div>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+
+
+            <!-- Educazione Fisica -->
+            <a href="educazione-fisica.html"
+                class="subject-card block p-6 bg-white/30 border border-stone-100 rounded-2xl reveal shadow-sm">
+                <div class="subject-image-container">
+                    <img src="media/edfisica.png" alt="Benessere" class="subject-image">
+                </div>
+                <div class="px-4 pb-4">
+                    <span class="text-stone-300 font-serif italic text-xl block mb-2">01.</span>
+                    <h3 class="text-2xl font-light mb-3">Ed. Fisica</h3>
+                    <p class="text-stone-500 text-sm leading-relaxed mb-6">
+                        Salute e benessere: l'importanza del sonno per l'equilibrio psicofisico.
+                    </p>
+                    <span class="text-xs uppercase tracking-widest text-stone-400">Vedi Argomenti →</span>
+                </div>
+            </a>
+
+            <!-- Informatica -->
+            <a href="gpoi.html"
+                class="subject-card block p-6 bg-white/30 border border-stone-100 rounded-2xl reveal shadow-sm">
+                <div class="subject-image-container">
+                    <img src="media/gpoi.png" alt="Gestione Progetto" class="subject-image">
+                </div>
+                <div class="px-4 pb-4">
+                    <span class="text-stone-300 font-serif italic text-xl block mb-2">02.</span>
+                    <h3 class="text-2xl font-light mb-3">Gestione Progetto</h3>
+                    <p class="text-stone-500 text-sm leading-relaxed mb-6">
+                        Bioeconomia: il futuro sostenibile che nasce dalle risorse naturali
+                    </p>
+                    <span class="text-xs uppercase tracking-widest text-stone-400">Vedi Argomenti →</span>
+                </div>
+            </a>
+
+
+            <!-- Matematica -->
+            <a href="matematica.html"
+                class="subject-card block p-6 bg-white/30 border border-stone-100 rounded-2xl reveal shadow-sm">
+                <div class="subject-image-container">
+                    <img src="media/matematica.png" alt="Matematica" class="subject-image">
+                </div>
+                <div class="px-4 pb-4">
+                    <span class="text-stone-300 font-serif italic text-xl block mb-2">03.</span>
+                    <h3 class="text-2xl font-light mb-3">Matematica</h3>
+                    <p class="text-stone-500 text-sm leading-relaxed mb-6">
+                        Statistica e analisi: interpretare i dati per la sicurezza stradale.
+                    </p>
+                    <span class="text-xs uppercase tracking-widest text-stone-400">Vedi Argomenti →</span>
+                </div>
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-24 border-t border-stone-200">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h3 class="text-2xl font-light mb-8 italic">Alessio Saulli</h3>
+            <p class="text-stone-400 text-xs uppercase tracking-widest mb-12">
+                Educazione Civica &bull; Anno Scolastico 2025/2026
+            </p>
+            <div class="flex justify-center space-x-12 text-stone-300">
+                <span class="w-12 h-[1px] bg-current"></span>
+                <span class="w-12 h-[1px] bg-current"></span>
+                <span class="w-12 h-[1px] bg-current"></span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
