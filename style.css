@@ -137,3 +137,29 @@ h3 {
 .theme-yellow .section-ornament::before {
     background: var(--accent);
 }
+
+/* Social Icons */
+.social-link {
+    font-size: 1.5rem;
+    color: inherit;
+    opacity: 0.3;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-block;
+}
+
+.social-link:hover {
+    opacity: 1;
+    transform: translateY(-5px) scale(1.1);
+}
+
+.social-link.github:hover {
+    color: #333;
+}
+
+.social-link.instagram:hover {
+    color: #e4405f;
+}
+
+.social-link.behance:hover {
+    color: #0057ff;
+}
