@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informatica - Smart Working | Alessio Saulli</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body class="paper-texture selection:bg-[#07119C] selection:text-white custom-cursor">
+    
+    <nav class="fixed w-full z-50 bg-[#07119C] backdrop-blur-md border-b border-white/10 shadow-lg">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-serif italic tracking-tight hover:opacity-100 transition-opacity uppercase text-white">
+                ALESSIO SAULLI<span class="mx-2 text-[#07119C]/60">-</span>ESAME DI STATO
+            </a>
+            
+            <div class="hidden md:flex items-center space-x-8 text-sm uppercase tracking-widest font-medium text-stone-200">
+                <a href="index.html" class="hover:text-white transition-colors">Home</a>
+                <a href="educazione-civica.html" class="hover:text-white transition-colors">Ed. Civica</a>
+                <a href="pcto.html" class="hover:text-white transition-colors">PCTO</a>
+                <a href="capolavoro.html" class="hover:text-white transition-colors">Capolavoro</a>
+            </div>
+
+            <button id="mobile-menu-toggle" class="md:hidden text-white focus:outline-none">
+                <i class="fa-solid fa-bars-staggered text-xl"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden fixed inset-0 bg-[#07119C] z-[60] flex flex-col items-center justify-center space-y-8 text-2xl font-light italic text-white/90">
+            <button id="mobile-menu-close" class="absolute top-8 right-8 text-white/50">
+                <i class="fa-solid fa-xmark text-3xl"></i>
+            </button>
+            <a href="index.html" class="hover:text-white transition-colors">Home</a>
+            <a href="educazione-civica.html" class="hover:text-white transition-colors">Ed. Civica</a>
+            <a href="pcto.html" class="hover:text-white transition-colors">PCTO</a>
+            <a href="capolavoro.html" class="hover:text-white transition-colors">Capolavoro</a>
+        </div>
+    </nav>
+
+
+    <header class="pt-32 pb-16 px-6 text-center reveal">
+        <div class="max-w-4xl mx-auto">
+            <p id="materia-informatica" class="text-[#07119C]/80 uppercase tracking-[0.3em] text-xs mb-4 cursor-pointer">Materia: Informatica</p>
+            <h1 class="text-5xl md:text-6xl font-light mb-8 tracking-tight leading-tight">
+                Lo Smart Working: <br>
+                <span class="hand-drawn-underline italic">Lavoro Agile tra Opportunità e Responsabilità</span>
+            </h1>
+            <div class="w-full aspect-[21/9] rounded-3xl overflow-hidden mt-12 shadow-xl border border-[#07119C]/10">
+                <img id="hero-image-informatica" src="media/info2.png" alt="Smart Working"
+                    class="w-full h-full object-cover grayscale opacity-90 transition-all duration-700 hover:grayscale-0">
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-24 space-y-32">
+
+        <section class="reveal max-w-3xl mx-auto">
+            <article class="prose prose-stone max-w-none">
+                <h2 class="text-3xl font-light italic mb-8">Cos’è lo Smart Working e come si distingue dal Telelavoro</h2>
+                <div class="text-stone-600 leading-relaxed space-y-6 text-lg font-light">
+                    <p>
+                        Lo smart working, o lavoro agile, è una modalità di svolgimento dell’attività lavorativa caratterizzata da flessibilità organizzativa, autonomia nella gestione del tempo e dello spazio, e orientamento al risultato piuttosto che alla presenza fisica. Non va confuso con il telelavoro: quest’ultimo prevede una postazione fissa al di fuori dell’ufficio (tipicamente a casa), con orari definiti e invariati rispetto al lavoro tradizionale.
+                    </p>
+                    <p>
+                        In Italia, il quadro normativo di riferimento è la Legge n. 81/2017, che disciplina il lavoro agile come accordo volontario tra datore di lavoro e dipendente. La legge stabilisce anche che il datore di lavoro rimane responsabile della sicurezza sul lavoro anche per il lavoratore agile, indipendentemente dal luogo in cui opera.
+                    </p>
+                </div>
+            </article>
+        </section>
+
+        <section class="reveal space-y-12">
+            <div class="grid md:grid-cols-2 gap-16 items-start">
+                <div class="space-y-6">
+                    <span class="text-[#07119C]/30 font-serif italic text-6xl block mb-4">01.</span>
+                    <h2 class="text-3xl font-light italic">Il Quadro Giuridico e i Diritti Fondamentali</h2>
+                    <div class="text-stone-600 leading-relaxed space-y-4 font-light text-lg">
+                        <p>
+                            La Costituzione italiana garantisce all’articolo 1 il valore fondante del lavoro per la Repubblica, e all’articolo 4 il diritto al lavoro. Gli articoli 32 e 35 tutelano rispettivamente la salute e la protezione del lavoro in tutte le sue forme.
+                        </p>
+                        <p>
+                            Tra i diritti emergenti più discussi vi è il cosiddetto <strong>diritto alla disconnessione</strong>: il lavoratore ha il diritto di non essere reperibile al di fuori dell’orario di lavoro concordato.
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-blue-50/50 p-10 rounded-3xl border border-[#07119C]/10 space-y-6">
+                    <h3 class="text-xl font-serif text-[#07119C]">Carta dei Diritti Fondamentali UE</h3>
+                    <ul class="space-y-4 text-sm tracking-wide">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-check text-[#07119C] mt-1"></i>
+                            <span class="text-stone-500">Dignità umana nel contesto digitale.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-check text-[#07119C] mt-1"></i>
+                            <span class="text-stone-500">Condizioni di lavoro giusto ed equo.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-check text-[#07119C] mt-1"></i>
+                            <span class="text-stone-500">Equilibrio tra vita lavorativa e privata.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-check text-[#07119C] mt-1"></i>
+                            <span class="text-stone-500">Protezione dei dati personali.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="reveal bg-[#07119C]/5 rounded-[3rem] p-12 md:p-20">
+            <div class="text-center mb-16">
+                <span class="text-[#07119C]/30 font-serif italic text-6xl block mb-4">02.</span>
+                <h2 class="text-3xl font-light italic">Vantaggi dello Smart Working</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="space-y-4">
+                    <h3 class="text-[#07119C] font-serif italic text-xl">Per il lavoratore</h3>
+                    <ul class="text-stone-600 text-sm space-y-2 font-light">
+                        <li>• Work-life balance</li>
+                        <li>• Riduzione stress pendolarismo</li>
+                        <li>• Maggiore autonomia</li>
+                        <li>• Ambiente personalizzato</li>
+                    </ul>
+                </div>
+                <div class="space-y-4">
+                    <h3 class="text-[#07119C] font-serif italic text-xl">Per l’azienda</h3>
+                    <ul class="text-stone-600 text-sm space-y-2 font-light">
+                        <li>• Aumento della produttività</li>
+                        <li>• Riduzione dei costi fissi</li>
+                        <li>• Attrattività per talenti</li>
+                        <li>• Cultura moderna</li>
+                    </ul>
+                </div>
+                <div class="space-y-4">
+                    <h3 class="text-[#07119C] font-serif italic text-xl">Per la società</h3>
+                    <ul class="text-stone-600 text-sm space-y-2 font-light">
+                        <li>• Riduzione traffico ed emissioni</li>
+                        <li>• Maggiore inclusione</li>
+                        <li>• Rivitalizzazione aree periferiche</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="reveal space-y-12">
+            <div class="max-w-3xl mx-auto">
+                <div class="text-center mb-12">
+                    <span class="text-[#07119C]/30 font-serif italic text-6xl block mb-4">03.</span>
+                    <h2 class="text-3xl font-light italic">Svantaggi e Rischi</h2>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="p-8 border border-[#07119C]/10 rounded-2xl space-y-4">
+                        <i class="fa-solid fa-person-dots-from-line text-2xl text-[#07119C]/40"></i>
+                        <h4 class="font-serif italic text-lg">Rischi fisici</h4>
+                        <p class="text-stone-500 text-xs leading-relaxed">Ambienti non ergonomici, problemi posturali e affaticamento visivo.</p>
+                    </div>
+                    <div class="p-8 border border-[#07119C]/10 rounded-2xl space-y-4">
+                        <i class="fa-solid fa-users-slash text-2xl text-[#07119C]/40"></i>
+                        <h4 class="font-serif italic text-lg">Rischi psicosociali</h4>
+                        <p class="text-stone-500 text-xs leading-relaxed">Isolamento, burnout e confine sfumato tra lavoro e vita privata (always-on).</p>
+                    </div>
+                    <div class="p-8 border border-[#07119C]/10 rounded-2xl space-y-4">
+                        <i class="fa-solid fa-shield-virus text-2xl text-[#07119C]/40"></i>
+                        <h4 class="font-serif italic text-lg">Rischi informatici</h4>
+                        <p class="text-stone-500 text-xs leading-relaxed">Violazione dei dati, reti non sicure e perdita di informazioni riservate.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reveal">
+            <div class="max-w-3xl mx-auto space-y-12">
+                <div class="text-center">
+                    <span class="text-[#07119C]/30 font-serif italic text-6xl block mb-4">04.</span>
+                    <h2 class="text-3xl font-light italic">Responsabilità e Legalità</h2>
+                </div>
+                <div class="text-stone-600 leading-relaxed space-y-8 text-lg font-light">
+                    <p>
+                        Lo smart working richiede un livello più elevato di <strong>responsabilità individuale</strong>. Meno controllo esterno non significa meno responsabilità — significa più responsabilità. Il passaggio dalla logica del controllo a quella della fiducia reciproca è fondamentale.
+                    </p>
+                    <div class="grid grid-cols-2 gap-8 py-8 border-y border-[#07119C]/10">
+                        <div>
+                            <p class="text-[#07119C] font-serif italic text-xl">Fiducia</p>
+                            <p class="text-xs uppercase tracking-widest text-[#07119C]/40 mt-1">Nuovo Patto</p>
+                        </div>
+                        <div>
+                            <p class="text-[#07119C] font-serif italic text-xl">Risultati</p>
+                            <p class="text-xs uppercase tracking-widest text-[#07119C]/40 mt-1">Obiettivo Comune</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reveal bg-stone-50 p-12 md:p-20 rounded-[3rem]">
+            <div class="max-w-3xl mx-auto space-y-12">
+                <h2 class="text-3xl font-light italic text-center">Smart Working e Agenda 2030</h2>
+                <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+                    <div class="text-center p-4">
+                        <p class="text-[#07119C] font-bold text-2xl">3</p>
+                        <p class="text-[10px] uppercase tracking-widest text-stone-400">Salute</p>
+                    </div>
+                    <div class="text-center p-4">
+                        <p class="text-[#07119C] font-bold text-2xl">8</p>
+                        <p class="text-[10px] uppercase tracking-widest text-stone-400">Lavoro</p>
+                    </div>
+                    <div class="text-center p-4">
+                        <p class="text-[#07119C] font-bold text-2xl">10</p>
+                        <p class="text-[10px] uppercase tracking-widest text-stone-400">Uguaglianza</p>
+                    </div>
+                    <div class="text-center p-4">
+                        <p class="text-[#07119C] font-bold text-2xl">11</p>
+                        <p class="text-[10px] uppercase tracking-widest text-stone-400">Città</p>
+                    </div>
+                    <div class="text-center p-4">
+                        <p class="text-[#07119C] font-bold text-2xl">13</p>
+                        <p class="text-[10px] uppercase tracking-widest text-stone-400">Clima</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reveal pt-24 border-t border-[#07119C]/10 text-center">
+            <h2 class="text-3xl font-light mb-8 italic">Conclusione</h2>
+            <div class="text-stone-600 leading-relaxed text-lg font-light max-w-2xl mx-auto space-y-6">
+                <p>
+                    Lo smart working non è semplicemente una modalità alternativa di lavorare: è un cambiamento culturale profondo che ridefinisce il rapporto tra lavoratore, azienda e società. Se governato con strumenti adeguati, può diventare un potente strumento di crescita per il Paese intero.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="py-24 border-t border-[#07119C]/20">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h3 class="text-2xl font-light mb-8 italic">Alessio Saulli</h3>
+            <p class="text-[#07119C]/60 text-xs uppercase tracking-widest mb-12">
+                Informatica &bull; Anno Scolastico 2025/2026
+            </p>
+            <div class="flex justify-center space-x-8 mb-12">
+                <a href="https://github.com/sickkkalex" target="_blank" class="social-link github">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com/saullialessioo/" target="_blank" class="social-link instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.behance.net/alessiosaulli1" target="_blank" class="social-link behance">
+                    <i class="fa-brands fa-behance"></i>
+                </a>
+            </div>
+            <div class="flex justify-center space-x-12 text-[#07119C]/30">
+                <span class="w-12 h-[1px] bg-current"></span>
+                <span class="w-12 h-[1px] bg-current"></span>
+                <span class="w-12 h-[1px] bg-current"></span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

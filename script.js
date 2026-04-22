@@ -1,10 +1,10 @@
-// Reveal on scroll
+
 const reveals = document.querySelectorAll('.reveal');
 const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('active');
-            // Add a slight delay for subsequent reveals if they intersect at the same time
+            
             revealObserver.unobserve(entry.target);
         }
     });
@@ -15,7 +15,7 @@ const revealObserver = new IntersectionObserver((entries) => {
 
 reveals.forEach(reveal => revealObserver.observe(reveal));
 
-// Smooth scroll for nav links
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         const href = this.getAttribute('href');
@@ -31,3 +31,36 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+const mobileMenuClose = document.getElementById('mobile-menu-close');
+const mobileMenu = document.getElementById('mobile-menu');
+
+if (mobileMenuToggle && mobileMenu) {
+    mobileMenuToggle.addEventListener('click', () => {
+        mobileMenu.classList.remove('hidden');
+        document.body.style.overflow = 'hidden'; 
+    });
+
+    mobileMenuClose.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        document.body.style.overflow = ''; 
+    });
+
+    
+    mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            document.body.style.overflow = '';
+        });
+    });
+}
+
+const materiaItaliano = document.getElementById('materia-italiano');
+const heroImage = document.getElementById('hero-image');
+
+if (materiaItaliano && heroImage) {
+    materiaItaliano.addEventListener('click', () => {
+        heroImage.src = 'media/freud2.png';
+    });
+}

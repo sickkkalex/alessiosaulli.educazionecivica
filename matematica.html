@@ -26,19 +26,41 @@
 </head>
 
 <body class="paper-texture selection:bg-blue-200 custom-cursor theme-dark-blue">
-    <!-- Navigation -->
-    <nav class="fixed w-full z-50 bg-[#fdfbf7]/80 backdrop-blur-sm border-b border-stone-200">
+    
+    <nav class="fixed w-full z-50 bg-[#07119C] backdrop-blur-md border-b border-white/10 shadow-lg">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html" class="text-xl font-serif italic tracking-tight">AS<span class="mx-2"> -
-                </span> Ed.
-                Civica</a>
-            <div class="flex space-x-8 text-sm uppercase tracking-widest font-medium text-stone-600">
-                <a href="index.html" class="hover:text-stone-900 transition-colors">← Torna alla Home</a>
+            <a href="index.html" class="text-xl font-serif italic tracking-tight hover:opacity-100 transition-opacity uppercase text-white">
+                ALESSIO SAULLI<span class="mx-2 text-[#07119C]/60">-</span>ESAME DI STATO
+            </a>
+            
+            
+            <div class="hidden md:flex items-center space-x-8 text-sm uppercase tracking-widest font-medium text-stone-200">
+                <a href="index.html" class="hover:text-white transition-colors">Home</a>
+                <a href="educazione-civica.html" class="hover:text-white transition-colors">Ed. Civica</a>
+                <a href="pcto.html" class="hover:text-white transition-colors">PCTO</a>
+                <a href="capolavoro.html" class="hover:text-white transition-colors">Capolavoro</a>
             </div>
+
+            
+            <button id="mobile-menu-toggle" class="md:hidden text-white focus:outline-none">
+                <i class="fa-solid fa-bars-staggered text-xl"></i>
+            </button>
+        </div>
+
+        
+        <div id="mobile-menu" class="hidden fixed inset-0 bg-[#07119C] z-[60] flex flex-col items-center justify-center space-y-8 text-2xl font-light italic text-white/90">
+            <button id="mobile-menu-close" class="absolute top-8 right-8 text-white/50">
+                <i class="fa-solid fa-xmark text-3xl"></i>
+            </button>
+            <a href="index.html" class="hover:text-white transition-colors">Home</a>
+            <a href="educazione-civica.html" class="hover:text-white transition-colors">Ed. Civica</a>
+            <a href="pcto.html" class="hover:text-white transition-colors">PCTO</a>
+            <a href="capolavoro.html" class="hover:text-white transition-colors">Capolavoro</a>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+
+    
     <header class="pt-32 pb-16 px-6 text-center reveal">
         <div class="max-w-4xl mx-auto">
             <p class="text-blue-900 uppercase tracking-[0.3em] text-xs mb-4">Materia: Matematica</p>
@@ -46,32 +68,32 @@
                 Analisi Statistica degli <br>
                 <span class="hand-drawn-underline italic">Incidenti Stradali</span>
             </h1>
-            <p class="text-stone-500 font-light text-lg italic mt-4">Dati ISTAT / ACI 2023</p>
+            <p class="text-[#07119C]/80 font-light text-lg italic mt-4">Dati ISTAT / ACI 2023</p>
         </div>
     </header>
 
     <main class="max-w-4xl mx-auto px-6 py-24 space-y-32">
 
-        <!-- Section: Overview Dati -->
+        
         <section class="reveal grid md:grid-cols-3 gap-8 text-center">
-            <div class="p-8 bg-white/50 border border-stone-100 rounded-3xl shadow-sm">
-                <p class="text-stone-400 text-xs uppercase tracking-widest mb-2">Incidenti Totali</p>
+            <div class="p-8 bg-white/50 border border-[#07119C]/10 rounded-3xl shadow-sm">
+                <p class="text-[#07119C]/60 text-xs uppercase tracking-widest mb-2">Incidenti Totali</p>
                 <h2 class="text-4xl font-serif text-blue-900">166.525</h2>
-                <p class="text-stone-400 text-[10px] mt-2">+0,4% (Dati consolidati 2023)</p>
+                <p class="text-[#07119C]/60 text-[10px] mt-2">+0,4% (Dati consolidati 2023)</p>
             </div>
             <div class="p-8 bg-blue-900 text-white rounded-3xl shadow-xl transform md:-translate-y-4">
                 <p class="text-blue-200 text-xs uppercase tracking-widest mb-2">Vittime</p>
                 <h2 class="text-4xl font-serif">3.039</h2>
                 <p class="text-blue-300 text-[10px] mt-2">-3,8% (Trend in calo)</p>
             </div>
-            <div class="p-8 bg-white/50 border border-stone-100 rounded-3xl shadow-sm">
-                <p class="text-stone-400 text-xs uppercase tracking-widest mb-2">Feriti</p>
+            <div class="p-8 bg-white/50 border border-[#07119C]/10 rounded-3xl shadow-sm">
+                <p class="text-[#07119C]/60 text-xs uppercase tracking-widest mb-2">Feriti</p>
                 <h2 class="text-4xl font-serif text-blue-900">224.634</h2>
-                <p class="text-stone-400 text-[10px] mt-2">+0,5% rispetto al 2022</p>
+                <p class="text-[#07119C]/60 text-[10px] mt-2">+0,5% rispetto al 2022</p>
             </div>
         </section>
 
-        <!-- Section: Cause Principali -->
+        
         <section class="reveal space-y-12">
             <h2 class="text-3xl font-light italic text-center section-ornament">Le Cause Comportamentali</h2>
             <div class="max-w-2xl mx-auto space-y-8">
@@ -80,7 +102,7 @@
                     rimane il fattore di rischio primario, spesso legata all'uso di dispositivi digitali.
                 </p>
 
-                <!-- Distrazione -->
+                
                 <div class="space-y-2">
                     <div class="flex justify-between text-sm uppercase tracking-widest text-stone-600">
                         <span>Guida Distratta</span>
@@ -91,7 +113,7 @@
                     </div>
                 </div>
 
-                <!-- Precedenza -->
+                
                 <div class="space-y-2">
                     <div class="flex justify-between text-sm uppercase tracking-widest text-stone-600">
                         <span>Mancata Precedenza / Semafori</span>
@@ -102,7 +124,7 @@
                     </div>
                 </div>
 
-                <!-- Velocità -->
+                
                 <div class="space-y-2">
                     <div class="flex justify-between text-sm uppercase tracking-widest text-stone-600">
                         <span>Velocità Eccessiva</span>
@@ -115,7 +137,7 @@
             </div>
         </section>
 
-        <!-- Section: Costo Sociale -->
+        
         <section class="reveal grid md:grid-cols-2 gap-16 items-center">
             <div class="order-2 md:order-1">
                 <div class="p-12 bg-blue-50/50 border border-blue-100 rounded-[3rem]">
@@ -147,8 +169,8 @@
             </div>
         </section>
 
-        <!-- Section: Utenti Vulnerabili -->
-        <section class="reveal py-24 border-y border-stone-100">
+        
+        <section class="reveal py-24 border-y border-[#07119C]/10">
             <h2 class="text-3xl font-light italic text-center mb-16">Gli Utenti Vulnerabili</h2>
             <div class="grid md:grid-cols-2 gap-12">
                 <div class="space-y-8">
@@ -159,25 +181,25 @@
                     <div class="space-y-6">
                         <div class="flex items-start space-x-4">
                             <span class="text-2xl italic font-serif text-blue-900">2.6</span>
-                            <div class="border-l-2 border-stone-100 pl-4">
+                            <div class="border-l-2 border-[#07119C]/10 pl-4">
                                 <p class="text-sm font-bold uppercase tracking-widest">Indice di Mortalità Pedoni</p>
-                                <p class="text-xs text-stone-400">4 volte superiore rispetto agli occupanti di
+                                <p class="text-xs text-[#07119C]/60">4 volte superiore rispetto agli occupanti di
                                     autovetture (0.7)</p>
                             </div>
                         </div>
                         <div class="flex items-start space-x-4">
                             <span class="text-2xl italic font-serif text-blue-900">1.6</span>
-                            <div class="border-l-2 border-stone-100 pl-4">
+                            <div class="border-l-2 border-[#07119C]/10 pl-4">
                                 <p class="text-sm font-bold uppercase tracking-widest">Indice di Mortalità Motociclisti
                                 </p>
-                                <p class="text-xs text-stone-400">2.4 volte superiore rispetto agli occupanti di
+                                <p class="text-xs text-[#07119C]/60">2.4 volte superiore rispetto agli occupanti di
                                     autovetture</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="bg-stone-50 p-10 rounded-3xl border border-stone-200/50">
-                    <h4 class="text-sm uppercase tracking-[0.2em] text-stone-400 mb-6 text-center">Analisi Demografica
+                    <h4 class="text-sm uppercase tracking-[0.2em] text-[#07119C]/60 mb-6 text-center">Analisi Demografica
                     </h4>
                     <ul class="space-y-6 text-stone-600 font-light italic">
                         <li class="flex justify-between items-center border-b border-stone-200 pb-4">
@@ -193,14 +215,14 @@
                             <span class="text-red-900 font-bold">+23,6%</span>
                         </li>
                     </ul>
-                    <p class="text-[10px] text-stone-400 mt-6 leading-relaxed">
+                    <p class="text-[10px] text-[#07119C]/60 mt-6 leading-relaxed">
                         *Dati elaborati congiuntamente da ISTAT e ACI per il periodo 2023-2024.
                     </p>
                 </div>
             </div>
         </section>
 
-        <!-- Section: Riflessione Matematica -->
+        
         <article class="reveal max-w-none pt-24 text-center">
             <h2 class="text-3xl font-light mb-8 italic">Interpretazione e Conclusioni</h2>
             <div class="text-stone-600 leading-relaxed text-lg font-light max-w-2xl mx-auto space-y-6">
@@ -220,11 +242,11 @@
 
     </main>
 
-    <!-- Footer -->
+    
     <footer class="py-24 border-t border-stone-200">
         <div class="max-w-4xl mx-auto px-6 text-center">
             <h3 class="text-2xl font-light mb-8 italic">Alessio Saulli (5BIA)</h3>
-            <p class="text-stone-400 text-xs uppercase tracking-widest mb-12">
+            <p class="text-[#07119C]/60 text-xs uppercase tracking-widest mb-12">
                 Educazione Civica &bull; Anno Scolastico 2025/2026
             </p>
             <div class="flex justify-center space-x-8 mb-12">

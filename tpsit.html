@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TPSIT - Blockchain & Mining | Alessio Saulli</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body class="paper-texture selection:bg-[#07119C] selection:text-white custom-cursor">
+    
+    <nav class="fixed w-full z-50 bg-[#07119C] backdrop-blur-md border-b border-white/10 shadow-lg">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-serif italic tracking-tight hover:opacity-100 transition-opacity uppercase text-white">
+                ALESSIO SAULLI<span class="mx-2 text-[#07119C]/60">-</span>ESAME DI STATO
+            </a>
+            
+            <div class="hidden md:flex items-center space-x-8 text-sm uppercase tracking-widest font-medium text-stone-200">
+                <a href="index.html" class="hover:text-white transition-colors">Home</a>
+                <a href="educazione-civica.html" class="hover:text-white transition-colors">Ed. Civica</a>
+                <a href="pcto.html" class="hover:text-white transition-colors">PCTO</a>
+                <a href="capolavoro.html" class="hover:text-white transition-colors">Capolavoro</a>
+            </div>
+
+            <button id="mobile-menu-toggle" class="md:hidden text-white focus:outline-none">
+                <i class="fa-solid fa-bars-staggered text-xl"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden fixed inset-0 bg-[#07119C] z-[60] flex flex-col items-center justify-center space-y-8 text-2xl font-light italic text-white/90">
+            <button id="mobile-menu-close" class="absolute top-8 right-8 text-white/50">
+                <i class="fa-solid fa-xmark text-3xl"></i>
+            </button>
+            <a href="index.html" class="hover:text-white transition-colors">Home</a>
+            <a href="educazione-civica.html" class="hover:text-white transition-colors">Ed. Civica</a>
+            <a href="pcto.html" class="hover:text-white transition-colors">PCTO</a>
+            <a href="capolavoro.html" class="hover:text-white transition-colors">Capolavoro</a>
+        </div>
+    </nav>
+
+
+    <header class="pt-32 pb-16 px-6 text-center reveal">
+        <div class="max-w-4xl mx-auto">
+            <p class="text-[#07119C]/80 uppercase tracking-[0.3em] text-xs mb-4">Materia: TPSIT</p>
+            <h1 class="text-5xl md:text-6xl font-light mb-8 tracking-tight leading-tight">
+                Blockchain: <br>
+                <span class="hand-drawn-underline italic">L'Algoritmo del Consenso</span>
+            </h1>
+            <div class="w-full aspect-[21/9] rounded-3xl overflow-hidden mt-12 shadow-xl border border-[#07119C]/10">
+                <img src="media/mining.png" alt="Blockchain technology"
+                    class="w-full h-full object-cover grayscale opacity-90 transition-all duration-700 hover:grayscale-0">
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-24 space-y-32">
+
+        <section class="reveal max-w-3xl mx-auto">
+            <article class="prose prose-stone max-w-none">
+                <div class="text-[#07119C]/80 leading-relaxed text-xl font-light italic text-center mb-16">
+                    "La blockchain è una tecnologia di registro distribuito che permette di registrare transazioni in modo permanente, trasparente e resistente alle modifiche."
+                </div>
+                <div class="text-stone-600 leading-relaxed space-y-6 text-lg font-light text-center">
+                    <p>
+                        Immagina un grande libro mastro, copiato su migliaia di computer indipendenti nel mondo. Ogni "blocco" contiene transazioni recenti, un timestamp e un riferimento crittografico al blocco precedente.
+                    </p>
+                </div>
+            </article>
+        </section>
+
+        <section class="reveal space-y-12">
+            <div class="grid md:grid-cols-2 gap-16 items-start">
+                <div class="space-y-6">
+                    <span class="text-[#07119C]/30 font-serif italic text-6xl block mb-4">02.</span>
+                    <h2 class="text-3xl font-light italic">Il Mining: Il Motore della Sicurezza</h2>
+                    <div class="text-stone-600 leading-relaxed space-y-4 font-light text-lg">
+                        <p>
+                            Il mining è il processo attraverso cui nuove transazioni vengono verificate e aggiunte alla catena. Nelle blockchain **Proof-of-Work** (come Bitcoin), i miner mettono a disposizione la loro potenza di calcolo per risolvere problemi matematici complessi.
+                        </p>
+                        <p>
+                            La rete regola automaticamente la difficoltà affinché venga risolto un blocco mediamente ogni 10 minuti, garantendo stabilità e sicurezza all'intero ecosistema.
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-blue-50/50 p-10 rounded-3xl border border-[#07119C]/10 space-y-6">
+                    <h3 class="text-xl font-serif text-[#07119C]">Funzioni del Mining</h3>
+                    <ul class="space-y-4 text-sm tracking-wide">
+                        <li class="flex items-start gap-3">
+                            <span class="font-bold text-[#07119C]">Verifica:</span>
+                            <span class="text-stone-500">Conferma la validità delle nuove transazioni inviate dagli utenti.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="font-bold text-[#07119C]">Emissione:</span>
+                            <span class="text-stone-500">Creazione di nuova moneta come premio peri miner.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="font-bold text-[#07119C]">Immutabilità:</span>
+                            <span class="text-stone-500">Rende i tentativi di alterazione dei dati estremamente costosi.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="reveal">
+            <div class="max-w-3xl mx-auto space-y-12">
+                <div class="text-center">
+                    <span class="text-[#07119C]/30 font-serif italic text-6xl block mb-4">03.</span>
+                    <h2 class="text-3xl font-light italic">Funzionamento Tecnico</h2>
+                </div>
+                <div class="text-stone-600 leading-relaxed space-y-8 text-lg font-light text-center">
+                    <p>
+                        I miner raccolgono le transazioni in un **mempool** e competono per trovare un numero casuale chiamato **nonce**. Combinato con i dati del blocco, deve produrre un **hash** che inizi con un certo numero di zeri.
+                    </p>
+                    <div class="grid grid-cols-3 gap-8 py-8 border-y border-[#07119C]/10 uppercase tracking-widest text-[10px]">
+                        <div>
+                            <p class="text-[#07119C] text-2xl font-serif mb-2">Hash</p>
+                            <p>Impronta digitale</p>
+                        </div>
+                        <div>
+                            <p class="text-[#07119C] text-2xl font-serif mb-2">Nonce</p>
+                            <p>Numero casuale</p>
+                        </div>
+                        <div>
+                            <p class="text-[#07119C] text-2xl font-serif mb-2">PoW</p>
+                            <p>Prova di lavoro</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reveal bg-[#07119C]/5 rounded-[3rem] p-12 md:p-20">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="space-y-6">
+                    <span class="text-[#07119C]/30 font-serif italic text-6xl block mb-4">04.</span>
+                    <h2 class="text-3xl font-light italic">Perché è Necessario?</h2>
+                    <p class="text-stone-600 leading-relaxed font-light text-lg">
+                        Grazie alla Proof-of-Work, alterare una transazione richiederebbe di rifare il lavoro di mining su quel blocco e su tutti i successivi, superando la potenza dell'intera rete. Questo rende la blockchain un sistema di fiducia distribuita senza autorità centrali.
+                    </p>
+                </div>
+                <div class="relative p-8 bg-white/40 border border-[#07119C]/10 rounded-2xl shadow-sm">
+                    <p class="text-stone-500 italic text-sm text-center">
+                        "Più è lunga la catena di blocchi dopo una transazione, più quella transazione è considerata irreversibile."
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="reveal space-y-12">
+            <div class="max-w-3xl mx-auto space-y-6 text-center">
+                <span class="text-[#07119C]/30 font-serif italic text-6xl block mb-4">05.</span>
+                <h2 class="text-3xl font-light italic section-ornament">Criticità e Proof-of-Stake</h2>
+                <div class="text-stone-600 leading-relaxed space-y-6 text-lg font-light">
+                    <p>
+                        Il Proof-of-Work consuma una quantità enorme di energia elettrica. Per questo motivo, molti nuovi progetti adottano il **Proof-of-Stake**, dove la sicurezza è garantita da validatori che "bloccano" criptovaluta invece di consumare potenza di calcolo.
+                    </p>
+                    <div class="bg-blue-900 text-white p-6 rounded-2xl mt-8 flex items-center justify-between">
+                        <div class="text-left">
+                            <p class="text-xs uppercase tracking-widest opacity-60">Successo Tecnico</p>
+                            <h4 class="text-lg font-serif">Ethereum: The Merge</h4>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-2xl font-bold">-99.9%</p>
+                            <p class="text-[10px] opacity-60">Consumo Energetico</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reveal pt-24 border-t border-[#07119C]/10 text-center text-stone-600 leading-relaxed text-lg font-light max-w-2xl mx-auto space-y-6">
+            <h2 class="text-3xl font-light mb-8 italic">Conclusione</h2>
+            <p>
+                Oggi il mining resta centrale per Bitcoin, ma l'intero settore si sta spostando verso meccanismi di consenso più efficienti, consolidando la blockchain come pilastro per tracciare filiere e gestire identità digitali in modo sostenibile.
+            </p>
+        </section>
+
+    </main>
+
+    <footer class="py-24 border-t border-[#07119C]/20">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h3 class="text-2xl font-light mb-8 italic">Alessio Saulli (5BIA)</h3>
+            <p class="text-[#07119C]/60 text-xs uppercase tracking-widest mb-12">
+                TPSIT &bull; Anno Scolastico 2025/2026
+            </p>
+            <div class="flex justify-center space-x-8 mb-12">
+                <a href="https://github.com/sickkkalex" target="_blank" class="social-link github">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com/saullialessioo/" target="_blank" class="social-link instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.behance.net/alessiosaulli1" target="_blank" class="social-link behance">
+                    <i class="fa-brands fa-behance"></i>
+                </a>
+            </div>
+            <div class="flex justify-center space-x-12 text-[#07119C]/30">
+                <span class="w-12 h-[1px] bg-current"></span>
+                <span class="w-12 h-[1px] bg-current"></span>
+                <span class="w-12 h-[1px] bg-current"></span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

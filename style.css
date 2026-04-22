@@ -1,9 +1,11 @@
 :root {
     --parchment: #fdfbf7;
     --ink: #1a1a1a;
-    --accent: #4a5d4e;
-    /* Sage green for a scholarly feel */
+    --accent: #07119C;
+    
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@100..900&display=swap');
 
 body {
     background-color: var(--parchment);
@@ -12,14 +14,30 @@ body {
     scroll-behavior: smooth;
 }
 
+::selection {
+    background-color: #07119C;
+    color: white;
+}
+
 h1,
 h2,
 h3 {
-    font-family: 'Crimson Pro', serif;
+    font-family: 'Playfair Display', serif;
 }
 
 .paper-texture {
     background-image: url('https://www.transparenttextures.com/patterns/paper.png');
+}
+
+.hero-bg {
+    background-image: linear-gradient(rgba(253, 251, 247, 0.4), rgba(253, 251, 247, 0.4)), url('media/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.hero-text-shadow {
+    text-shadow: 0 2px 20px rgba(255, 255, 255, 0.8), 0 0 40px rgba(255, 255, 255, 0.4);
 }
 
 .reveal {
@@ -54,12 +72,12 @@ h3 {
     width: 100%;
 }
 
-/* Custom Scholarly Cursor */
+
 .custom-cursor {
     cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%234a5d4e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l5 5"></path><path d="M9.5 14.5L16 8"></path></svg>'), auto;
 }
 
-/* Section Decorative Border */
+
 .section-ornament {
     position: relative;
 }
@@ -108,37 +126,37 @@ h3 {
     opacity: 1;
 }
 
-/* Theme: Blue Accents */
-.theme-blue-accents {
-    --accent: #5b8fb9;
-    /* Soft dusty blue */
+
+.section-ornament {
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
 }
 
-.theme-blue-accents .section-ornament::before {
-    background: var(--accent);
+.section-ornament::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 1px;
+    background-color: var(--accent);
+    opacity: 0.3;
 }
 
-/* Theme: Dark Blue Accents */
-.theme-dark-blue {
-    --accent: #1e3a8a;
-    /* Deep navy blue */
+.subject-card {
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(7, 17, 156, 0.05);
 }
 
-.theme-dark-blue .section-ornament::before {
-    background: var(--accent);
+.subject-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(7, 17, 156, 0.08);
 }
 
-/* Theme: Yellow Accents */
-.theme-yellow {
-    --accent: #d97706;
-    /* Warm amber/yellow */
-}
 
-.theme-yellow .section-ornament::before {
-    background: var(--accent);
-}
-
-/* Social Icons */
 .social-link {
     font-size: 1.5rem;
     color: inherit;

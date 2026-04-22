@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materie - Educazione Civica | Alessio Saulli</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Inter:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body class="paper-texture selection:bg-stone-200 custom-cursor">
+    
+    <nav class="fixed w-full z-50 bg-[#07119C] backdrop-blur-md border-b border-white/10 shadow-lg">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-serif italic tracking-tight hover:opacity-100 transition-opacity uppercase text-white">
+                ALESSIO SAULLI<span class="mx-2 text-[#07119C]/60">-</span>ESAME DI STATO
+            </a>
+            
+            
+            <div class="hidden md:flex items-center space-x-8 text-sm uppercase tracking-widest font-medium text-stone-200">
+                <a href="index.html" class="hover:text-white transition-colors">Home</a>
+                <a href="educazione-civica.html" class="hover:text-white transition-colors">Ed. Civica</a>
+                <a href="pcto.html" class="hover:text-white transition-colors">PCTO</a>
+                <a href="capolavoro.html" class="hover:text-white transition-colors">Capolavoro</a>
+            </div>
+
+            
+            <button id="mobile-menu-toggle" class="md:hidden text-white focus:outline-none">
+                <i class="fa-solid fa-bars-staggered text-xl"></i>
+            </button>
+        </div>
+
+        
+        <div id="mobile-menu" class="hidden fixed inset-0 bg-[#07119C] z-[60] flex flex-col items-center justify-center space-y-8 text-2xl font-light italic text-white/90">
+            <button id="mobile-menu-close" class="absolute top-8 right-8 text-white/50">
+                <i class="fa-solid fa-xmark text-3xl"></i>
+            </button>
+            <a href="index.html" class="hover:text-white transition-colors">Home</a>
+            <a href="educazione-civica.html" class="hover:text-white transition-colors">Ed. Civica</a>
+            <a href="pcto.html" class="hover:text-white transition-colors">PCTO</a>
+            <a href="capolavoro.html" class="hover:text-white transition-colors">Capolavoro</a>
+        </div>
+    </nav>
+
+
+    
+    <header class="pt-36 pb-12 px-6 text-center reveal">
+        <div class="max-w-4xl mx-auto">
+            <p class="text-[#07119C]/80 uppercase tracking-[0.3em] text-xs mb-4">Educazione Civica</p>
+            <h1 class="text-5xl md:text-6xl font-light mb-4 tracking-tight leading-tight italic">
+                Le Materie
+            </h1>
+            <div class="w-12 h-[1px] bg-stone-300 mx-auto mt-8"></div>
+        </div>
+    </header>
+
+    
+    <main class="max-w-6xl mx-auto px-6 py-16 pb-32">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            
+            <a href="educazione-fisica.html"
+                class="subject-card block p-6 bg-white/30 border border-[#07119C]/10 rounded-2xl reveal shadow-sm">
+                <div class="subject-image-container">
+                    <img src="media/edfisica.png" alt="Benessere" class="subject-image">
+                </div>
+                <div class="px-4 pb-4">
+                    <span class="text-stone-300 font-serif italic text-xl block mb-2">01.</span>
+                    <h2 class="text-2xl font-light mb-3">Ed. Fisica</h2>
+                    <p class="text-[#07119C]/80 text-sm leading-relaxed mb-6">
+                        Salute e benessere: l'importanza del sonno per l'equilibrio psicofisico.
+                    </p>
+                    <span class="text-xs uppercase tracking-widest text-[#07119C]/60">Vedi Argomenti →</span>
+                </div>
+            </a>
+
+            
+            <a href="gpoi.html"
+                class="subject-card block p-6 bg-white/30 border border-[#07119C]/10 rounded-2xl reveal shadow-sm">
+                <div class="subject-image-container">
+                    <img src="media/gpoi.png" alt="Gestione Progetto" class="subject-image">
+                </div>
+                <div class="px-4 pb-4">
+                    <span class="text-stone-300 font-serif italic text-xl block mb-2">02.</span>
+                    <h2 class="text-2xl font-light mb-3">Gestione Progetto</h2>
+                    <p class="text-[#07119C]/80 text-sm leading-relaxed mb-6">
+                        Bioeconomia: il futuro sostenibile che nasce dalle risorse naturali.
+                    </p>
+                    <span class="text-xs uppercase tracking-widest text-[#07119C]/60">Vedi Argomenti →</span>
+                </div>
+            </a>
+
+            
+            <a href="matematica.html"
+                class="subject-card block p-6 bg-white/30 border border-[#07119C]/10 rounded-2xl reveal shadow-sm">
+                <div class="subject-image-container">
+                    <img src="media/matematica.png" alt="Matematica" class="subject-image">
+                </div>
+                <div class="px-4 pb-4">
+                    <span class="text-[#07119C]/30 font-serif italic text-xl block mb-2">03.</span>
+                    <h2 class="text-2xl font-light mb-3">Matematica</h2>
+                    <p class="text-[#07119C]/80 text-sm leading-relaxed mb-6">
+                        Statistica e analisi: interpretare i dati per la sicurezza stradale.
+                    </p>
+                    <span class="text-xs uppercase tracking-widest text-[#07119C]/60">Vedi Argomenti →</span>
+                </div>
+            </a>
+
+            <a href="italiano.html"
+                class="subject-card block p-6 bg-white/30 border border-[#07119C]/10 rounded-2xl reveal shadow-sm">
+                <div class="subject-image-container">
+                    <img src="media/freud.png" alt="Italiano" class="subject-image">
+                </div>
+                <div class="px-4 pb-4">
+                    <span class="text-[#07119C]/30 font-serif italic text-xl block mb-2">04.</span>
+                    <h2 class="text-2xl font-light mb-3">Italiano</h2>
+                    <p class="text-[#07119C]/80 text-sm leading-relaxed mb-6">
+                        Sigmund Freud e Italo Svevo: il teatro dell'inconscio e l'inettitudine moderna.
+                    </p>
+                    <span class="text-xs uppercase tracking-widest text-[#07119C]/60">Vedi Argomenti →</span>
+                </div>
+            </a>
+
+            <a href="storia.html"
+                class="subject-card block p-6 bg-white/30 border border-[#07119C]/10 rounded-2xl reveal shadow-sm">
+                <div class="subject-image-container">
+                    <img src="media/salvemini.png" alt="Storia" class="subject-image">
+                </div>
+                <div class="px-4 pb-4">
+                    <span class="text-[#07119C]/30 font-serif italic text-xl block mb-2">05.</span>
+                    <h2 class="text-2xl font-light mb-3">Storia</h2>
+                    <p class="text-[#07119C]/80 text-sm leading-relaxed mb-6">
+                        Gaetano Salvemini a Bitonto: le lotte politiche e lo scandalo del 1913.
+                    </p>
+                    <span class="text-xs uppercase tracking-widest text-[#07119C]/60">Vedi Argomenti →</span>
+                </div>
+            </a>
+
+            <a href="tpsit.html"
+                class="subject-card block p-6 bg-white/30 border border-[#07119C]/10 rounded-2xl reveal shadow-sm">
+                <div class="subject-image-container">
+                    <img src="media/bc.png" alt="TPSIT" class="subject-image">
+                </div>
+                <div class="px-4 pb-4">
+                    <span class="text-[#07119C]/30 font-serif italic text-xl block mb-2">06.</span>
+                    <h2 class="text-2xl font-light mb-3">TPSIT</h2>
+                    <p class="text-[#07119C]/80 text-sm leading-relaxed mb-6">
+                        Blockchain e Mining: il registro distribuito e il consenso digitale.
+                    </p>
+                    <span class="text-xs uppercase tracking-widest text-[#07119C]/60">Vedi Argomenti →</span>
+                </div>
+            </a>
+
+            <a href="inglese.html"
+                class="subject-card block p-6 bg-white/30 border border-[#07119C]/10 rounded-2xl reveal shadow-sm">
+                <div class="subject-image-container">
+                    <img src="media/ing.png" alt="Inglese" class="subject-image">
+                </div>
+                <div class="px-4 pb-4">
+                    <span class="text-[#07119C]/30 font-serif italic text-xl block mb-2">07.</span>
+                    <h2 class="text-2xl font-light mb-3">Inglese</h2>
+                    <p class="text-[#07119C]/80 text-sm leading-relaxed mb-6">
+                        Internet Safety: essentials to protect yourself and your computer from cyber threats.
+                    </p>
+                    <span class="text-xs uppercase tracking-widest text-[#07119C]/60">Vedi Argomenti →</span>
+                </div>
+            </a>
+
+            <a href="informatica.html"
+                class="subject-card block p-6 bg-white/30 border border-[#07119C]/10 rounded-2xl reveal shadow-sm">
+                <div class="subject-image-container">
+                    <img src="media/info1.png" alt="Informatica" class="subject-image">
+                </div>
+                <div class="px-4 pb-4">
+                    <span class="text-[#07119C]/30 font-serif italic text-xl block mb-2">08.</span>
+                    <h2 class="text-2xl font-light mb-3">Informatica</h2>
+                    <p class="text-[#07119C]/80 text-sm leading-relaxed mb-6">
+                        Smart Working: il lavoro agile tra diritti fondamentali e nuove sfide digitali.
+                    </p>
+                    <span class="text-xs uppercase tracking-widest text-[#07119C]/60">Vedi Argomenti →</span>
+                </div>
+            </a>
+
+        </div>
+    </main>
+
+    
+    <footer class="py-24 border-t border-[#07119C]/20">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h3 class="text-2xl font-light mb-8 italic">Alessio Saulli</h3>
+            <p class="text-[#07119C]/60 text-xs uppercase tracking-widest mb-12">
+                Educazione Civica &bull; Anno Scolastico 2025/2026
+            </p>
+            <div class="flex justify-center space-x-8 mb-12">
+                <a href="https://github.com/sickkkalex" target="_blank" class="social-link github">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com/saullialessioo/" target="_blank" class="social-link instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.behance.net/alessiosaulli1" target="_blank" class="social-link behance">
+                    <i class="fa-brands fa-behance"></i>
+                </a>
+            </div>
+            <div class="flex justify-center space-x-12 text-[#07119C]/30">
+                <span class="w-12 h-[1px] bg-current"></span>
+                <span class="w-12 h-[1px] bg-current"></span>
+                <span class="w-12 h-[1px] bg-current"></span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inglese - Internet Safety | Alessio Saulli</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body class="paper-texture selection:bg-[#07119C] selection:text-white custom-cursor">
+    
+    <nav class="fixed w-full z-50 bg-[#07119C] backdrop-blur-md border-b border-white/10 shadow-lg">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-serif italic tracking-tight hover:opacity-100 transition-opacity uppercase text-white">
+                ALESSIO SAULLI<span class="mx-2 text-[#07119C]/60">-</span>ESAME DI STATO
+            </a>
+            
+            <div class="hidden md:flex items-center space-x-8 text-sm uppercase tracking-widest font-medium text-stone-200">
+                <a href="index.html" class="hover:text-white transition-colors">Home</a>
+                <a href="educazione-civica.html" class="hover:text-white transition-colors">Ed. Civica</a>
+                <a href="pcto.html" class="hover:text-white transition-colors">PCTO</a>
+                <a href="capolavoro.html" class="hover:text-white transition-colors">Capolavoro</a>
+            </div>
+
+            <button id="mobile-menu-toggle" class="md:hidden text-white focus:outline-none">
+                <i class="fa-solid fa-bars-staggered text-xl"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden fixed inset-0 bg-[#07119C] z-[60] flex flex-col items-center justify-center space-y-8 text-2xl font-light italic text-white/90">
+            <button id="mobile-menu-close" class="absolute top-8 right-8 text-white/50">
+                <i class="fa-solid fa-xmark text-3xl"></i>
+            </button>
+            <a href="index.html" class="hover:text-white transition-colors">Home</a>
+            <a href="educazione-civica.html" class="hover:text-white transition-colors">Ed. Civica</a>
+            <a href="pcto.html" class="hover:text-white transition-colors">PCTO</a>
+            <a href="capolavoro.html" class="hover:text-white transition-colors">Capolavoro</a>
+        </div>
+    </nav>
+
+
+    <header class="pt-32 pb-16 px-6 text-center reveal">
+        <div class="max-w-4xl mx-auto">
+            <p id="materia-inglese" class="text-[#07119C]/80 uppercase tracking-[0.3em] text-xs mb-4 cursor-pointer">Materia: Inglese</p>
+            <h1 class="text-5xl md:text-6xl font-light mb-8 tracking-tight leading-tight">
+                Use the Internet safely: <br>
+                <span class="hand-drawn-underline italic">Cybersecurity Essentials</span>
+            </h1>
+            <div class="w-full aspect-[21/9] rounded-3xl overflow-hidden mt-12 shadow-xl border border-[#07119C]/10">
+                <img id="hero-image-inglese" src="media/ing2.png" alt="Internet Safety"
+                    class="w-full h-full object-cover grayscale opacity-90 transition-all duration-700 hover:grayscale-0">
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-24 space-y-32">
+
+        <section class="reveal max-w-3xl mx-auto">
+            <article class="prose prose-stone max-w-none">
+                <div class="text-[#07119C]/80 leading-relaxed text-xl font-light italic text-center mb-16">
+                    "Four essentials to protect yourself and your computer."
+                </div>
+            </article>
+        </section>
+
+        <section class="reveal space-y-12">
+            <div class="grid md:grid-cols-2 gap-16 items-start">
+                <div class="space-y-6">
+                    <span class="text-[#07119C]/30 font-serif italic text-6xl block mb-4">01.</span>
+                    <h2 class="text-3xl font-light italic">Install a Firewall</h2>
+                    <div class="text-stone-600 leading-relaxed space-y-4 font-light text-lg">
+                        <p>
+                            A firewall is software or hardware that builds a defensive wall around your computer. It checks data coming from the Internet and then either turns it away or allows it to pass, depending on your firewall settings.
+                        </p>
+                        <p>
+                            In this way, it helps prevent hackers and malicious software from accessing your computer.
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-blue-50/50 p-10 rounded-3xl border border-[#07119C]/10 space-y-6">
+                    <h3 class="text-xl font-serif text-[#07119C]">Why it matters</h3>
+                    <p class="text-stone-500 text-sm tracking-wide">
+                        Without a firewall, your computer is directly exposed to every probe and attack from the open internet.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="reveal">
+            <div class="max-w-3xl mx-auto space-y-12">
+                <div class="text-center">
+                    <span class="text-[#07119C]/30 font-serif italic text-6xl block mb-4">02.</span>
+                    <h2 class="text-3xl font-light italic">Keep Software Up to Date</h2>
+                </div>
+                <div class="text-stone-600 leading-relaxed space-y-8 text-lg font-light text-center">
+                    <p>
+                        Most malware attacks are made by criminal gangs who have found ways of infiltrating known security weak spots. It’s important, therefore, to install the regular security updates offered by software for operating systems such as Microsoft Windows and plug-ins like Java.
+                    </p>
+                    <p>
+                        Malware attacks now tend to come via the web browser, so it’s essential to have the latest version of your browser installed.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="reveal bg-[#07119C]/5 rounded-[3rem] p-12 md:p-20">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="space-y-6">
+                    <span class="text-[#07119C]/30 font-serif italic text-6xl block mb-4">03.</span>
+                    <h2 class="text-3xl font-light italic">Use Protection Software</h2>
+                    <p class="text-stone-600 leading-relaxed font-light text-lg">
+                        Anti-virus software scans emails and other files on your computer for viruses, worms, and trojans. Anti-spyware programs alert you when spyware tries to install itself.
+                    </p>
+                </div>
+                <div class="relative">
+                    <div class="absolute -top-10 -left-10 text-8xl text-[#07119C]/10 font-serif italic">"</div>
+                    <blockquote class="text-xl italic font-light text-[#07119C] leading-relaxed relative z-10">
+                        Because new malware is identified every day, protection software should always be allowed to run its automatic update when needed.
+                    </blockquote>
+                    <div class="absolute -bottom-10 -right-10 text-8xl text-[#07119C]/10 font-serif italic">"</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reveal space-y-12">
+            <div class="max-w-3xl mx-auto space-y-6">
+                <span class="text-[#07119C]/30 font-serif italic text-6xl block mb-4">04.</span>
+                <h2 class="text-3xl font-light italic section-ornament">Take Special Care with Email</h2>
+                <div class="text-stone-600 leading-relaxed space-y-6 text-lg font-light">
+                    <p>
+                        Be careful when opening email attachments. Files attached to email messages are a primary source of virus infection. Never open an attachment from someone you don’t know.
+                    </p>
+                    <p>
+                        Take care also when clicking hyperlinks in email messages. Hyperlinks are often used as part of phishing and spyware operations. Only click links in email messages that you trust.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="reveal pt-24 border-t border-[#07119C]/10 text-center">
+            <h2 class="text-3xl font-light mb-8 italic">Email Safety Tips</h2>
+            <div class="text-stone-600 leading-relaxed text-lg font-light max-w-2xl mx-auto space-y-6">
+                <p>
+                    Consider installing a spam filter to prevent spam emails from reaching you. Never respond to a spam email, even to say no or ‘unsubscribe’; your reply is a confirmation of your email address.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="py-24 border-t border-[#07119C]/20">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h3 class="text-2xl font-light mb-8 italic">Alessio Saulli</h3>
+            <p class="text-[#07119C]/60 text-xs uppercase tracking-widest mb-12">
+                Inglese &bull; Anno Scolastico 2025/2026
+            </p>
+            <div class="flex justify-center space-x-8 mb-12">
+                <a href="https://github.com/sickkkalex" target="_blank" class="social-link github">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com/saullialessioo/" target="_blank" class="social-link instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.behance.net/alessiosaulli1" target="_blank" class="social-link behance">
+                    <i class="fa-brands fa-behance"></i>
+                </a>
+            </div>
+            <div class="flex justify-center space-x-12 text-[#07119C]/30">
+                <span class="w-12 h-[1px] bg-current"></span>
+                <span class="w-12 h-[1px] bg-current"></span>
+                <span class="w-12 h-[1px] bg-current"></span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
